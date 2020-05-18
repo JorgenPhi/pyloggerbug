@@ -142,7 +142,6 @@ logging.config.dictConfig({
             'formatter': 'verbose'
         },
         'logdna': {
-            'level': logging.DEBUG,
             'class': 'logging.handlers.LogDNAHandler',
             'key': "LOGDNA_KEY_HERE",
             'options': {
@@ -154,7 +153,7 @@ logging.config.dictConfig({
     },
     'loggers': {
         '': {
-            'level': logging.DEBUG,
+            'level': logging.INFO,
             'handlers': ['console', 'logdna']
         },
     },
